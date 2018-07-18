@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bottega Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Bottega food Joint</h1>
+
+        <div class="menuWrapper">
+            <div class="lunchMenu">
+                <h1>Pizza Menu</h1>
+                    <ul>
+                        <li>Pepporoni</li>
+                    </ul>
+                    <input type="text" id="input1" />
+                    <button onclick="myJsFunction()">Order!</button>
+            </div>
+            <div class="dinnerMenu">
+                <h1>Dinner Menu</h1>
+                    <ul>
+                        <li>Steak</li>
+                    </ul>
+                <input type="text" value="Dinner Choice"></input>
+            </div>
+        </div>
+            <div class="totals">
+                <h1>Totals</h1>
+            </div>
+    </div>
+    
+</body>
+
+<script>
+
+const sum = []
+const totals = []
+
+function myJsFunction() {
+    let text = document.getElementById('input1').value;
+    if (text === "Fish") {
+        alert ("You just ordered some fish!")
+        totals.push("Fish")
+        } else {
+            alert("ehhhhh")
+        }
+    }
+
+</script>
+</html>

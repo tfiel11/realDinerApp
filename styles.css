@@ -1,0 +1,73 @@
+html {
+    background: url('img/the-roi-of-outdoor-dining-furniture-within-outdoor-restaurant-furniture-important-features-of-outdoor-restaurant-furniture.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 45px;
+}
+
+.menuWrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.breakfastMenu {
+    border-style: solid;
+    background-color: white;
+    padding: 30px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background-color: #E3EDF2
+}
+
+.lunchMenu {
+    border-style: solid;
+    background-color: white;
+    padding: 30px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background-color: #E3EDF2
+}
+
+.dinnerMenu {
+    border-style: solid;
+    background-color: white;
+    padding: 30px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background-color: #E3EDF2
+}
+
+.extrasMenu {
+    border-style: solid;
+    background-color: white;
+    padding: 30px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background-color: #E3EDF2
+}
+
+.totals {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    background-color: white;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background-color: #E3EDF2;
+    margin-top: 75px;   
+}
+
+

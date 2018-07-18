@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ty's Place</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Ty's Fast Food Joint</h1>
+
+        <div class="menuWrapper">
+            <div class="breakfastMenu">
+                <h1>Breakfast Menu</h1>
+                <ul>
+                    <li>Eggs</li>
+                    <li>Pancakes</li>
+                    <li>Waffles</li>
+                    <li>Sausage</li>
+                </ul>
+                <!-- <form action = "/form.js"> -->
+                    <!-- <button name="breakfastButton" type="submit" value="Breakfast Choice"></button> -->
+                    <!-- <input id="clickMe" type="text" value="Choice"  /> -->
+                    <form> 
+                        <div>
+                          <label for="example">Enter an Order</label>
+                          <input id="breaky" type="text">
+                        </div>
+                        <div>
+                          <input type="submit" value="Send" onclick"myJsFunction()">
+                        </div>
+                    </form> 
+            </div>
+            <div class="lunchMenu">
+                <h1>Lunch Menu</h1>
+                    <ul>
+                        <li>Fish</li>
+                        <li>Chicken</li>
+                        <li>Hamburger</li>
+                        <li>Steak</li>
+                    </ul>
+                    <input type="text" id="input1" />
+                    <button onclick="myJsFunction()">Order!</button>
+            </div>
+            <div class="dinnerMenu">
+                <h1>Dinner Menu</h1>
+                    <ul>
+                        <li>Fish</li>
+                        <li>Chicken</li>
+                        <li>Hamburger</li>
+                        <li>Steak</li>
+                    </ul>
+                <input type="text" value="Dinner Choice"></input>
+            </div>
+            <div class="extrasMenu">
+                <h1>Extras</h1>
+                    <ul>
+                        <li>Ice Cream</li>
+                    </ul>
+                <input type="text" value="Extras Choice"></input>
+            </div>
+        </div>
+            <div class="totals">
+                <h1>Totals</h1>
+            </div>
+    </div>
+    
+</body>
+<script>
+
+// const breakfast = ["Eggs - $3", " Pancakes - $3", " Waffles - $3", " Sausage - $3"]
+// const lunchMenu = ["Fish - $4", " Chicken - $4", " Hamburger - $4", " Steak - 4$"]
+// const mainMenu = ["Fish - $5", " Chicken - $5", " Hamburger - $5", " and Steak - $5"]
+// const sidesMenu = ["Fries - $2", " Tater Tots - 2$", " Salad - $2", " Chicken Nuggets - $2"]
+const sum = []
+
+// const welcome = () => {
+
+//   if (breakfastInput === "eggs") {
+//      entree()
+//    } else if (firstWelcome === "lunch") {
+//      lunch1()
+//    } else if (firstWelcome === "breakfast") {
+//      breakfast1()
+//    } else {
+//      alert("Please choose breakfast, lunch, or dinner")
+//      welcome()
+//    }
+// }
+
+const totals = []
+
+function myJsFunction() {
+    let text = document.getElementById('input1').value;
+    if (text === "Fish") {
+        alert ("You just ordered some fish!")
+        totals.push("Fish")
+        } else {
+            alert("ehhhhh")
+        }
+    }
+
+const breakfast1 = () => {
+//   breakfastPrompt = prompt(`Please choose from the following options so we can get started on your breakfast: ${breakfast}.`).toLowerCase()
+
+  if (example === "eggs" || example === "pancakes" || example === "waffles" || example === "sausage") {
+    sum.push(3);
+    breakfastThanks();
+
+  } else {
+    alert("Please choose a breakfast item on the menu")
+    breakfast1()
+  }    
+}
+
+const breakfastThanks = () => {
+  alert(`Awesome Choice! We have the finest ${breakfastPrompt} in town! Thanks for coming to Bottega Diner this morning, your total will be $${sum.reduce((a,b) => a+b, 0)}.`)
+}
+
+function lunch1() {
+    var texts = document.getElementById('input1').value;
+  if (texts === "fish" || texts === "chicken" || texts === "hamburger" || texts === "steak") {
+    // sum.push(4);
+    lunchThanks();
+
+  } else {
+    alert("Please choose an entree on the menu")
+    
+  }    
+}
+
+const lunchThanks = () => {
+  extrasBaby = prompt(`Awesome Choice! We have the finest ${lunchPrompt} in town! Thanks for coming to Bottega Diner for lunch today, your total will be $${sum.reduce((a, b) => a + b, 0)}. Would you like to add some ice cream for an addtional $2? Yes or No?`).toLowerCase()
+
+    if (extrasBaby == "yes") {
+      sum.push(2);
+      alert(`Awesome! Your new total will be $${sum.reduce((a, b) => a + b, 0)} with the ice cream. Thanks again!`)
+
+    } else if (extrasBaby == "no") {
+      alert(`No Problem! Your ${lunchPrompt} will be right out!`)
+    }
+}
+
+// const entree = () => {
+//   welcomePrompt = prompt(`Please choose from the following options so we can get started on your entree: ${mainMenu}.`).toLowerCase()
+
+//   if (welcomePrompt === "fish" || welcomePrompt === "chicken" || welcomePrompt === "hamburger" || welcomePrompt === "steak") {
+//     sum.push(5)
+//     side1()
+
+//   } else {
+//     alert("Please choose an entree on the menu")
+//     entree()
+//   }    
+// }
+
+// const side1 = () => {
+//   sideOne = prompt(`Great Choice! We have the best ${welcomePrompt} in town! That will be $${sum.reduce((a, b) => a + b, 0)}. What would you like for your first side? Please select from the following: ${sidesMenu}.`).toLowerCase()
+
+//   if (sideOne === "fries" || sideOne === "tater tots" || sideOne === "salad" || sideOne === "chicken nuggets") {
+//     sum.push(2)
+//     side2()
+//   } else {
+//     alert("Please choose a side on the menu")
+//     side1()
+//   }
+// }
+
+// const side2 = () => {
+//   sideTwo = prompt(`Perfect! Everyone loves our ${sideOne}! That puts your meal at $${sum.reduce((a, b) => a + b, 0)} so far. What would you like for your second side? ${sidesMenu}?`).toLowerCase()
+
+//   if (sideTwo === sideOne) {
+//     duplicate()  
+//   } else {
+//     sum.push(2)
+//       alert(`Excellent Choice! You can never go wrong with some ${sideTwo}! The total for your meal today will be $${sum.reduce((a, b) => a + b, 0)} even. Thanks for coming to Bottega Diner!`)
+//   }
+// }
+
+// const duplicate = () => {
+//   sameSide = prompt("Are you sure you want the same side? Yes or no?").toLowerCase()
+
+//   if(sameSide === "yes") {
+//     alert(`Excellent Choice! You can never go wrong with too much ${sideTwo}! That side is also $2. The total for your meal today will be $9 even. Thanks for coming to Bottega Diner!`)
+//     sum.push(2)
+//   } else {
+//       side2()
+//   }
+// }
+
+// welcome()
+
+</script>
+</html>
